@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966343131611",
+    "project_id": "movie-ticket-book-69e34",
+    "storage_bucket": "movie-ticket-book-69e34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966343131611:android:8929cac780a399519b67fe",
+        "android_client_info": {
+          "package_name": "com.example.weather_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADhhKV_CRTW-_aanGSOKjg7yrz6xKsK7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
