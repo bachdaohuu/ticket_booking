@@ -15,16 +15,9 @@ class MyApp extends StatelessWidget {
       darkTheme: darkTheme,
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      // localizationsDelegates: AppLocalizations.localizationsDelegates,
-      // supportedLocales: AppLocalizations.supportedLocales,
-      // locale: const Locale('en'),
       onGenerateRoute: RouteGenerator.generate,
       builder: EasyLoading.init(),
       initialRoute: initialRoute,
-      // home: BlocProvider(
-      //   create: (context) => HomeBloc(),
-      //   child: const HomePage(),
-      // ),
     );
   }
 }

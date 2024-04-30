@@ -1,11 +1,12 @@
 import '../enums/genre.dart';
 
-const image780BaseUrl = 'https://image.tmdb.org/t/p/w780';
-const image500BaseUrl = 'https://image.tmdb.org/t/p/w500';
-const image185BaseUrl = 'https://image.tmdb.org/t/p/w185';
-const noPosterImageUrl =
+const String image780BaseUrl = 'https://image.tmdb.org/t/p/w780';
+const String image500BaseUrl = 'https://image.tmdb.org/t/p/w500';
+const String image185BaseUrl = 'https://image.tmdb.org/t/p/w185';
+const String noPosterImageUrl =
     'https://www.csaff.org/wp-content/uploads/csaff-no-poster.jpg';
-const genreIdsConstMap = {
+
+const Map<int, Genre> genreIdsConstMap = {
   28: Genre.action,
   12: Genre.adventure,
   16: Genre.animation,
@@ -26,9 +27,11 @@ const genreIdsConstMap = {
   10752: Genre.war,
   37: Genre.western,
 };
-const viStringCode = 'vi';
-const enStringCode = 'en';
-const viPairStringCode = 'vi-VN';
-const enPairStringCode = 'en-US';
-const indexVideoType = ['Trailer', 'Teaser'];
-const cities = ['Hồ Chí Minh', 'Hà Nội', ' Đà Nẵng'];
+
+const String viStringCode = 'vi';
+const String enStringCode = 'en';
+const String viPairStringCode = 'vi-VN';
+const String enPairStringCode = 'en-US';
+
+const List<String> indexVideoType = ['Trailer', 'Teaser'];
+const List<String> cities = ['Hồ Chí Minh', 'Hà Nội', ' Đà Nẵng'];

@@ -19,12 +19,14 @@ Future<void> main(List<String> args) async {
   dioClient.initDio();
   await UserPreferences.initialize();
   String? token = UserPreferences.getToken();
-  runApp(
-    MyApp(
-      initialRoute:
-          token == null ? AuthRoute.loginRouteName : HomeRoute.routeName,
-    ),
-  );
+  runApp(MyApp(
+    initialRoute:
+        token == null ? AuthRoute.loginRouteName : HomeRoute.routeName,
+  ));
+  configureEasyLoading();
+}
+
+void configureEasyLoading() {
   EasyLoading.instance
     ..userInteractions = false
     ..dismissOnTap = false

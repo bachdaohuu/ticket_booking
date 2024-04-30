@@ -14,25 +14,26 @@ class AuthRepositoryImpl extends AuthRepository {
   }
 
   @override
-  Future<UserCredential?> loginWithGoogle() {
-    return _authRemoteDataSource.loginWithGoogle();
-  }
+  Future<UserCredential?> loginWithGoogle() =>
+      _authRemoteDataSource.loginWithGoogle();
 
   @override
-  Future<UserCredential?> loginWithUsernameAndPassword(
-      {required String username, required String password}) async {
-    return await _authRemoteDataSource.loginWithUsernameAndPassword(
-      username: username,
-      password: password,
-    );
-  }
+  Future<UserCredential?> loginWithUsernameAndPassword({
+    required String username,
+    required String password,
+  }) async =>
+      _authRemoteDataSource.loginWithUsernameAndPassword(
+        username: username,
+        password: password,
+      );
 
   @override
-  Future<UserCredential?> registerWithUsernameAndPassword(
-      {required String username, required String password}) {
-    return _authRemoteDataSource.registerWithUsernameAndPassword(
-      username: username,
-      password: password,
-    );
-  }
+  Future<UserCredential?> registerWithUsernameAndPassword({
+    required String username,
+    required String password,
+  }) =>
+      _authRemoteDataSource.registerWithUsernameAndPassword(
+        username: username,
+        password: password,
+      );
 }

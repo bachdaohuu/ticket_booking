@@ -3,13 +3,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 class UserPreferences {
   static late SharedPreferences _preferences;
 
-  static const _keyToken = 'token';
+  static const String _keyToken = 'token';
 
-  static Future initialize() async {
+  static Future<void> initialize() async {
     _preferences = await SharedPreferences.getInstance();
   }
 
-  static Future setToken(String token) async {
+  static Future<void> setToken(String token) async {
     await _preferences.setString(_keyToken, token);
   }
 
@@ -17,7 +17,7 @@ class UserPreferences {
     return _preferences.getString(_keyToken);
   }
 
-  static Future clearToken() async {
+  static Future<void> clearToken() async {
     await _preferences.remove(_keyToken);
   }
 }
